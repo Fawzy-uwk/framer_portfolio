@@ -1,0 +1,116 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(180deg, #d8ecff, #c4daff) !important;
+
+  @media screen and (max-width: 768px) {
+    min-height: 100dvh;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+section {
+  background-image: linear-gradient(180deg, #d8ecff, #c4daff) !important;
+  max-width: 100%;
+  scroll-snap-align: center;
+  overflow-x: hidden;
+}
+
+header,
+footer {
+  min-height: 100px;
+  background: transparent;
+  .wrapper {
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0rem;
+    @media screen and (max-width: 1250px) {
+      width: 100%;
+      padding: 1rem;
+      display: none;
+    }
+  }
+  .foot{
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.8rem 0rem;
+    @media screen and (max-width: 1250px) {
+      width: 100%;
+      padding: 1rem;
+      
+    }
+  }
+}
+
+.cursor{
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+/*Dark Mode*/
+.app.dark {
+  background-color: #092147 !important;
+
+  section {
+    background-image: linear-gradient(180deg, #000e25 30%, #092147) !important;
+  }
+
+  .feature {
+    background-color: #000e25;
+
+    .line{
+      background-color: #d8dcff ;
+    }
+  }
+
+  .side {
+    background: #2f466b;
+    color: white;
+  }
+
+  h1,
+  a {
+    color: white;
+  }
+
+  .side .link {
+    color: white;
+  }
+  span,
+  h2 {
+    color: #e7e9ff;
+  }
+  p {
+    color: #eaeaff;
+  }
+  .card {
+    border: solid 2px #78aaff;
+  }
+
+  .back {
+    color: rgba(139, 149, 255, 0.2) ;
+  }
+
+
+  .button:hover,
+  .portButton:hover {
+    border: solid 2px #ffffff;
+    color: white;
+  }
+  .s:hover{
+    color:#2f466b;
+  }
+}

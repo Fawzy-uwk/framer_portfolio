@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply w-80 p-8 h-80 border-[1.8px] border-sky-950 flex items-center text-center justify-around gap-6 flex-col text-sky-950;
+  }
+  .button {
+    @apply w-full text-lg font-semibold bg-sky-950 py-4 rounded-sm text-sky-50 hover:bg-transparent hover:border-2 hover:text-sky-950 hover:border-sky-950;
+  }
+
+  .H2 {
+    @apply text-2xl font-bold self-center text-center flex items-center gap-2;
+  }
+
+  .P {
+    @apply leading-6 text-lg font-[400];
+  }
+
+  .info {
+    @apply flex items-start flex-col gap-1;
+  }
+
+  .input {
+    @apply p-3 w-full text-lg rounded-md focus:outline-none focus:border-2 border-sky-950;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100dvh;
+  max-width: 100%;
+}
