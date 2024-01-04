@@ -1,39 +1,68 @@
 import {
   FaCopyright,
-  FaGithubSquare,
-  FaInstagramSquare,
+  FaGithub,
   FaLinkedin,
   
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import navIcon3 from "../assets/img/nav-icon3.svg";
+
 
 function Footer({ dark }) {
   return (
     <footer className="flex items-center justify-center flex-col p-4">
       <div className="flex foot items-center justify-between ">
-        <motion.a
-          animate={{ opacity: 1, scale: 1 }}
-          initial={{ opacity: 0, scale: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-3xl text-blue-950 font-bold decoration-transparent "
-        >
-          LOGO
-        </motion.a>
-        <motion.div
-          animate={{ opacity: 1, scale: 1 }}
-          initial={{ opacity: 0, scale: 0 }}
-          transition={{ duration: 0.8 }}
-          className="social flex items-center gap-5"
+      
+      <motion.a
+      href="#home"
+        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-4xl text-blue-950 font-bold decoration-transparent "
+      >
+        LOGO
+      </motion.a>
+      <motion.div
+        animate={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0 }}
+        transition={{ duration: 0.8 }}
+        className="social lg:flex items-center gap-5 hidden"
+      >
+        <a
+          href="https://www.linkedin.com/in/fawzy-mohamed-501610236/"
+          target="_blank"
+          rel="noreferrer"
         >
           <FaLinkedin size={35} color="#0077b5" />
-          {dark === "dark" ? (
-            <FaGithubSquare size={35} color="#2b3137" fill="#0076d1" />
-          ) : (
-            <FaGithubSquare size={35} color="#2b3137" fill="#0b168e" />
-          )}
-          <FaInstagramSquare size={35} color="#bc1888" />
-        </motion.div>
+        </a>
+        {dark === "dark" ? (
+          <a
+            href="https://github.com/Fawzy-uwk"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub size={35} color="#4078c0" fill="#0076d1" />
+          </a>
+        ) : (
+          <a
+            href="https://github.com/Fawzy-uwk"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub size={35} color="#2b3137" fill="#0b168e" />
+          </a>
+        )}
+        <a
+          href="https://www.frontendmentor.io/profile/Fawzy-uwk"
+          className="w-10 h-10 p-[7px] rounded-full border-2 border-sky-900 flex items-center justify-center"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={navIcon3} alt="" className="w-10 h-10" />
+        </a>
+      </motion.div>
       </div>
+
       <motion.div
         animate={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0 }}
