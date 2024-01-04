@@ -1,7 +1,7 @@
-import { Github, Linkedin } from "react-bootstrap-icons";
 import { motion } from "framer-motion";
 import Sidebar from "./Sidebar";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function NavBar({ setDark, dark, handleDarkModeToggle }) {
   return (
@@ -13,7 +13,7 @@ function NavBar({ setDark, dark, handleDarkModeToggle }) {
       />
       <div className="wrapper hidden lg:block">
         <motion.a
-        href="#home"
+          href="#home"
           animate={{ opacity: 1, scale: 1 }}
           initial={{ opacity: 0, scale: 0 }}
           transition={{ duration: 0.8 }}
@@ -32,7 +32,7 @@ function NavBar({ setDark, dark, handleDarkModeToggle }) {
             target="_blank"
             rel="noreferrer"
           >
-            <Linkedin height={28} width={28} color="#0077b5" />
+            <FaLinkedin size={35} color="#0077b5" />
           </a>
           {dark === "dark" ? (
             <a
@@ -40,7 +40,7 @@ function NavBar({ setDark, dark, handleDarkModeToggle }) {
               target="_blank"
               rel="noreferrer"
             >
-              <Github height={28} width={28} color="#4078c0" fill="#0076d1" />
+              <FaGithub size={35} color="#4078c0" fill="#0076d1" />
             </a>
           ) : (
             <a
@@ -48,7 +48,7 @@ function NavBar({ setDark, dark, handleDarkModeToggle }) {
               target="_blank"
               rel="noreferrer"
             >
-              <Github height={28} width={28} color="#2b3137" fill="#0b168e" />
+              <FaGithub size={35} color="#2b3137" fill="#0b168e" />
             </a>
           )}
           <a
