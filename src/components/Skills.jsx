@@ -6,10 +6,10 @@ import {
   FaJs,
   FaReact,
   FaSass,
+  FaGithub,
 } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
 import tail from "../../public/tailwind.svg";
-import { Github } from "react-bootstrap-icons";
 import { useRef } from "react";
 
 const variants = {
@@ -30,14 +30,12 @@ const variants = {
 };
 
 function Skills() {
-  
   const ref = useRef();
 
   const isInView = useInView(ref, { threshold: 0.5, rootMargin: "-50px" });
 
   return (
     <motion.div
-      
       className="min-h-[100dvh] flex items-start flex-col z-[100] bg-transparent "
       variants={variants}
       initial="initial"
@@ -193,7 +191,7 @@ function Skills() {
           <div className="card ">
             <h2 className="H2 flex items-center">
               <FaGit fill=" #f1502f" color="#fff" size={32} /> &{" "}
-              <Github fill="#003c81" />
+              <FaGithub fill="#003c81" size={32} />
               Git & Github
             </h2>
             <p className="P ">
