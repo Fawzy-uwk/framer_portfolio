@@ -7,6 +7,16 @@ import imgurl11 from "../assets/img/Coffee - Google Chrome 12_14_2023 9_05_49 PM
 import imgurl12 from "../assets/img/WC-2022 - Google Chrome 12_16_2023 4_31_51 PM.png";
 import imgurl13 from "../assets/img/Travel - Google Chrome 12_16_2023 4_34_44 PM.png";
 import imgurl14 from "../assets/img/Home - Google Chrome 12_16_2023 4_38_41 PM.png";
+import imgurl15 from "../assets/img/PopCorn.png";
+import imgurl16 from "../assets/img/Crypto.png";
+import imgurl17 from "../assets/img/Dashboard.png";
+import imgurl18 from "../assets/img/ReactChat.png";
+import imgurl19 from "../assets/img/Real-estate.png";
+import imgurl20 from "../assets/img/google.png";
+import imgurl21 from "../assets/img/reactBoot.png";
+
+import imgurl22 from "../assets/img/ReactForecast.png";
+
 import { useScroll, motion, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -66,12 +76,86 @@ const projects = [
   },
 
   {
+    title: "PopCorn",
+    description:
+      "A HTML CSS JS project as a simulation of movies website using tmdb API ",
+    image: imgurl15,
+    url: "https://popcorn-2024.netlify.app/",
+    repo: "https://github.com/Fawzy-uwk/popcorn",
+  },
+
+  {
     title: "Hendami",
     description:
       "A Real-world website for a Qatari clothes brand with HTML CSS(with bootstrab) and Js with python(django) backend. I did the front-end with my team  ",
     image: imgurl14,
     url: "https://hindami.site/",
     repo: "https://github.com/tabana1/Hendami",
+  },
+
+  {
+    title: "CryptoReact",
+    description:
+      "ReactJs project that displays data about cryptocurrency and its news from a fetched API ",
+    image: imgurl16,
+    url: "https://cryptoreact2024.netlify.app",
+    repo: "https://github.com/Fawzy-uwk/cryptoReact",
+  },
+
+  {
+    title: "Dashboard",
+    description:
+      "ReactJs project that displays cahrts and cards from syncfusion and gets data from a dummy data file as a simulation of a market",
+    image: imgurl17,
+    url: "https://shopdash2024.netlify.app/",
+    repo: "https://github.com/Fawzy-uwk/ShopDash",
+  },
+
+  {
+    title: "React Caht",
+    description:
+      "ReactJs project as simulation of chatting app with firebase firestore that stores chats and users with redux and redux toolkit for state management ",
+    image: imgurl18,
+    url: "https://react-chat-2024.netlify.app/",
+    repo: "https://github.com/Fawzy-uwk/chat",
+  },
+
+  {
+    title: "ReactEstate",
+    description:
+      "ReactJS project as a simulation of real estate websites that displays data from a dummy data file  ",
+    image: imgurl19,
+    url: "https://react-estate-2024.netlify.app/",
+    repo: "https://github.com/Fawzy-uwk/estate",
+  },
+
+  {
+    title: "Google Search",
+    description:
+      "ReactJS project as a simulation of google search engine using google-search API ",
+    image: imgurl20,
+    url: "https://react-estate-2024.netlify.app/",
+    repo: "https://github.com/Fawzy-uwk/estate",
+  },
+
+  {
+    title: "Portofolio Version 2.0",
+    description:
+      "ReactJS project using react-bootstrap that can be used as a portofolio website and ability to send emails",
+
+    image: imgurl21,
+    url: "https://glowing-lebkuchen-200f5b.netlify.app/",
+    repo: "https://github.com/Fawzy-uwk/porfolio_v2",
+  },
+
+  {
+    title: "React Forecast",
+    description:
+      "ReactJS project that`s a simulation of weather&forcasting apps using fetched data from openWeatherMap API ",
+
+    image: imgurl22,
+    url: "https://react-forecast-2024.netlify.app/",
+    repo: "https://github.com/Fawzy-uwk/weather",
   },
 ];
 
@@ -106,12 +190,16 @@ const Project = ({ project }) => {
             <a
               className="portButton text-2xl px-6 py-3 text-center bg-sky-950 text-white rounded-md hover:bg-transparent hover:border-2 hover:text-sky-950 hover:border-sky-950"
               href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Visit Site
             </a>
             <a
               className="portButton text-2xl px-6 py-3 bg-sky-950 text-center text-white rounded-md hover:bg-transparent hover:border-2 hover:text-sky-950 hover:border-sky-950"
               href={project.repo}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               View Ropository
             </a>
